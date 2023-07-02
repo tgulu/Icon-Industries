@@ -1,36 +1,48 @@
 * {
-    background-color: #1F2937;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: #1f2937;
+
+}
 
 /**** Header Section ****/
 
-.header-container{
-    margin: 0px 0px 180px 0px;
-
+.header-container {
+  margin: -40px 0px 180px 0px;
 }
-.header-container .logo{
-    color: #F9FAF8;
-    left: 5px;
-    font-size: 28px;
-    width: 50%;
-    text-align: left;
-    margin-left:5%;
-    margin-top: 30px;
-} 
+.header-container .header-logo {
+  color: #f9faf8;
+  left: 5px;
+  font-size: 28px;
+  width: 50%;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 35px;
+  padding-top: 1px;
+}
 
-.header-container .info{ 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color:blueviolet;
-    white-space: nowrap;
-    position: absolute;
-    margin-right: 30px;
-    right: 5px;
-    width: 20%;
-
+.header-container .header-info {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9faf8;
+  white-space: nowrap;
+  position: absolute;
+  margin-right: 30px;
+  right: 5px;
+  width: 20%;
 }
 
 /**** End of Header Section ****/
@@ -38,47 +50,100 @@
 /**** Hero Section ****/
 
 .hero-intro {
-    line-height: 10px;
+  line-height: 10px;
 }
 
-.hero .intro-website, .intro-awesome {
-    color:#F9FAF8;
-    left: 5px;
-    width: 50%;
-    text-align: left;
-    margin-left: 10%;
-    font-size: 48px;
-    line-height: 8px;
+.hero-section .intro-title,
+.intro-tile2 {
+  color: #f9faf8;
+  left: 5px;
+  width: 50%;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 48px;
+  line-height: 8px;
+}
+.hero-section .intro-text {
+  font-size: 26px;
+  color: #e5e7eb;
+  text-align: left;
+  left: 5px;
+  width: 46%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.fiance-img {
+  position: absolute;
+  margin-right: 30px;
+  top: 18%;
+  right: 10%;
+  border-radius: 25px;
+  border: 2px solid gold;
+}
+.sign-up {
+  background-color: #3882f6;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 23px;
+  margin-left: 10%;
+  color: #e5e7eb;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 60px;
+}
+/**** End of Hero Section ****/
+
+/***** Empolyee Section ****/
+
+.employees-container {
+  background-color: #f9faf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-bottom: 40px;
+}
+
+.name h1 {
+  font-size: 20px;
+}
+
+.names {
+  left: 5px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.worker1-img {
+  justify-content: center;
+  border-radius: 20px;
+  height: 260px;
+  width: 260px;
+}
+
+.employee-one,
+.employee-two,
+.employee-three,
+.employee-four {
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid gold;
+    display: inline-block;
+    height: 260px;
+    width: 260px;
+    flex: 1 1 auto;
+    margin: 30px 60px;
+    margin-bottom: 20px;
 
 }
-.hero .intro-text{
-    font-size:26px;
-    color:#E5E7EB;
-    text-align: left;
-    left: 5px;
-    width: 46%;
-    text-align:left;
-    margin-left:10%;
-}
 
-.fiance-img{
-    position: absolute;
-    margin-right: 30px;
-    top: 28%;
-    right: 10%;
-    border: none;
-    border-radius: 25px;
-
-}
-.sign-up{
-    background-color: #3882F6;
-    cursor: pointer;
-    padding: 15px 32px;
-    text-align: left;
-    text-decoration: none;
-    font-size: 23px;
-    margin-left:10%;
-    color:#E5E7EB;
-    border: none;
-    border-radius: 25px;
+.names p {
+  justify-content: flex-start;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
