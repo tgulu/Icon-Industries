@@ -13,23 +13,64 @@ body {
 .container {
   width: 100%;
   background-color: #1f2937;
-
 }
 
 /**** Header Section ****/
 
-.header-container {
-  margin: -40px 0px 180px 0px;
-}
-.header-container .header-logo {
+.header, .header-logo{
   color: #f9faf8;
-  left: 5px;
+  background-size: cover; 
+  background-color: #1f2937;
+  /* width: 100%; */
   font-size: 28px;
-  width: 50%;
-  text-align: left;
-  margin-left: 5%;
-  margin-top: 35px;
-  padding-top: 1px;
+  /* width: 50%; */
+  /* text-align: left; */
+  padding-left: 5%;
+  /* margin-top: 35px; */
+  /* padding-top: 1px; */
+  display: flex;
+  /* flex: 1 1 auto; */
+
+  
+}
+
+header ul {
+    font-size: 28px;
+    display:flex;
+    gap: 70px;
+    right: -20px;
+    top: 35px;
+    /* margin-left: 5%; */
+    /* margin-top: 35px; */
+    /* padding-top: 1px; */
+    /* white-space: nowrap; */
+    position: absolute;
+    margin-right: 30px;
+    /* right: 5px; */
+    width: 20%;
+
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.header-container {
+  margin: 0px 0px 180px 0px;
+}
+
+.header-container {
+  color: #f9faf8;
+  background-color: #1f2937;
+  /* left: 5px; */
+  /* font-size: 28px; */
+  /* width: 50%; */
+  /* text-align: left; */
+  /* margin-left: 5%; */
+  /* margin-top: 35px; */
+  /* padding-top: 1px; */
 }
 
 .header-container .header-info {
@@ -76,11 +117,14 @@ body {
 .fiance-img {
   position: absolute;
   margin-right: 30px;
-  top: 18%;
+  top: 20%;
   right: 10%;
   border-radius: 25px;
   border: 2px solid gold;
+  width:450px;
+  height:300px;
 }
+
 .sign-up {
   background-color: #3882f6;
   cursor: pointer;
@@ -91,24 +135,20 @@ body {
   margin-left: 10%;
   color: #e5e7eb;
   border: none;
-  border-radius: 25px;
-  margin-bottom: 60px;
+  border-radius: 15px;
+  margin-bottom: 100px;
 }
 /**** End of Hero Section ****/
 
 /***** Empolyee Section ****/
 
 .employees-container {
-  background-color: #f9faf6;
+  /* background-color: #f9faf6; */
+  background-color: pink;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  margin-bottom: 40px;
-}
-
-.name h1 {
-  font-size: 20px;
+  /* height: 60vh; */
 }
 
 .names {
@@ -116,34 +156,80 @@ body {
   width: 100%;
   text-align: center;
   justify-content: center;
+  margin-bottom: 60px;
+  
 }
 
-.worker1-img {
+.advisor-text,
+.advisor-title {
+  text-align: left;
+}
+
+.advisor-title{
+    font-size: 20px;
+}
+
+.worker-img {
   justify-content: center;
   border-radius: 20px;
-  height: 260px;
-  width: 260px;
+  height: 200px;
+  width: 300px;
 }
 
-.employee-one,
-.employee-two,
-.employee-three,
-.employee-four {
-    justify-content: center;
-    border-radius: 20px;
-    border: 1px solid gold;
-    display: inline-block;
-    height: 260px;
-    width: 260px;
-    flex: 1 1 auto;
-    margin: 30px 60px;
-    margin-bottom: 20px;
-
+.employee-one {
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid gold;
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  flex: 1 1 auto;
+  margin: 30px 60px;
+  /* margin-bottom: 20px; */
 }
 
 .names p {
   justify-content: flex-start;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
+
+/**** End of Empolyee Section ****/
+
+/***** Customer Quote ****/
+
+.customer-container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  padding: 0 200px;
+}
+
+.customer-container p {
+  text-align: center;
+  color: #1f2937;
+  left: 5px;
+  width: 75%;
+  margin-left: 15%;
+  margin-right: 20%;
+  margin-bottom: 7px;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: 'Roboto', arial;
+
+}
+
+.customer-container b {
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 24px;
+    font-weight: bold;
+
+
+}
+
